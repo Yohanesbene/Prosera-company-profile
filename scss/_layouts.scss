@@ -71,6 +71,15 @@ footer {
                 hr {
                     width: 30%;
                     margin-left: 0;
+                    transition: all .3s ease-in-out;
+                }
+
+                &:hover {
+
+                    hr {
+                        width: 35%;
+                        transition: all .3s ease-in-out;
+                    }
                 }
             }
         }

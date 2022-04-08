@@ -219,6 +219,14 @@ footer .footer__consult .footer__consult--left h2.stroke-text {
 footer .footer__consult .footer__consult--left a hr {
   width: 30%;
   margin-left: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+footer .footer__consult .footer__consult--left a:hover hr {
+  width: 35%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 footer .footer__consult figure {
@@ -539,8 +547,8 @@ section.hero .content .marque .marque--inner {
 }
 
 section.hero .content .marque .marque--inner .title {
-  -webkit-animation: scrollText 10s infinite linear;
-          animation: scrollText 10s infinite linear;
+  -webkit-animation: scrollText 20s infinite linear;
+          animation: scrollText 20s infinite linear;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,6 +659,24 @@ section.services .right {
   padding: 70px 0 70px 20px;
 }
 
+section.services .right .owl-carousel .slide .slide-content figure {
+  overflow: hidden;
+}
+
+section.services .right .owl-carousel .slide .slide-content figure img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+}
+
+section.services .right .owl-carousel .slide .slide-content:hover figure img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+}
+
 section.services .right .owl-carousel .slide .slide-content h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -716,10 +742,22 @@ section.projects .container-fluid .right {
 
 section.projects .container-fluid .projects--illustration figure {
   margin: 0;
+  overflow: hidden;
 }
 
 section.projects .container-fluid .projects--illustration figure img {
   width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+}
+
+section.projects .container-fluid .projects--illustration:hover figure img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
 }
 
 section.news {
@@ -743,6 +781,24 @@ section.news .owl-news .owl-item .slide .image__carousel {
   -webkit-transform: translateX(-10%);
   transform: translateX(-10%);
   opacity: 0;
+}
+
+section.news .owl-news .owl-item .slide .image__carousel figure {
+  overflow: hidden;
+}
+
+section.news .owl-news .owl-item .slide .image__carousel figure img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+}
+
+section.news .owl-news .owl-item .slide .image__carousel:hover figure img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
 }
 
 section.news .owl-news .owl-item .slide .content__carousel {
@@ -861,6 +917,7 @@ section.key__value .key__value--third .key__value--first-image figure,
 section.key__value .key__value--third .key__value--second-image figure,
 section.key__value .key__value--third .key__value--third-image figure {
   margin: 0;
+  overflow: hidden;
 }
 
 section.key__value .key__value--first .key__value--first-image figure img,
@@ -873,6 +930,25 @@ section.key__value .key__value--third .key__value--first-image figure img,
 section.key__value .key__value--third .key__value--second-image figure img,
 section.key__value .key__value--third .key__value--third-image figure img {
   width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+}
+
+section.key__value .key__value--first .key__value--first-image:hover figure img,
+section.key__value .key__value--first .key__value--second-image:hover figure img,
+section.key__value .key__value--first .key__value--third-image:hover figure img,
+section.key__value .key__value--second .key__value--first-image:hover figure img,
+section.key__value .key__value--second .key__value--second-image:hover figure img,
+section.key__value .key__value--second .key__value--third-image:hover figure img,
+section.key__value .key__value--third .key__value--first-image:hover figure img,
+section.key__value .key__value--third .key__value--second-image:hover figure img,
+section.key__value .key__value--third .key__value--third-image:hover figure img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
 }
 
 section.services-product {
@@ -903,8 +979,23 @@ section.services-product .services__content .services--image {
   margin-bottom: 70px;
 }
 
+section.services-product .services__content .services--image figure {
+  overflow: hidden;
+}
+
 section.services-product .services__content .services--image figure img {
   width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+}
+
+section.services-product .services__content .services--image:hover figure img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
 }
 
 section.services-product .services__content .services--text {
@@ -1017,6 +1108,7 @@ section.projects__product .projects__product--industrial .owl-3 .slide figure,
 section.projects__product .projects__product--industrial .owl-4 .slide figure,
 section.projects__product .projects__product--industrial .owl-5 .slide figure {
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
 section.projects__product .projects__product--residential .owl-3 .slide figure img,
@@ -1029,6 +1121,25 @@ section.projects__product .projects__product--industrial .owl-3 .slide figure im
 section.projects__product .projects__product--industrial .owl-4 .slide figure img,
 section.projects__product .projects__product--industrial .owl-5 .slide figure img {
   width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+}
+
+section.projects__product .projects__product--residential .owl-3 .slide:hover figure img,
+section.projects__product .projects__product--residential .owl-4 .slide:hover figure img,
+section.projects__product .projects__product--residential .owl-5 .slide:hover figure img,
+section.projects__product .projects__product--commercial .owl-3 .slide:hover figure img,
+section.projects__product .projects__product--commercial .owl-4 .slide:hover figure img,
+section.projects__product .projects__product--commercial .owl-5 .slide:hover figure img,
+section.projects__product .projects__product--industrial .owl-3 .slide:hover figure img,
+section.projects__product .projects__product--industrial .owl-4 .slide:hover figure img,
+section.projects__product .projects__product--industrial .owl-5 .slide:hover figure img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+  transition: all 0.5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
 }
 
 section.projects__product .projects__product--residential .owl-3 .slide .slide-text,
@@ -1156,6 +1267,14 @@ section.news__group .news--item .news--item-text a.link-black hr {
   width: 13%;
   margin-top: 10px;
   border-bottom: 2px solid #000000;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+section.news__group .news--item .news--item-text a.link-black:hover hr {
+  width: 15%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 section.news__group .news--item hr {
@@ -1193,7 +1312,16 @@ section.news__group .footer-news button.btn-load span {
 }
 
 section.news__group .footer-news button.btn-load hr {
+  width: 100%;
   border-bottom: 2px solid #10292D;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+section.news__group .footer-news button.btn-load:hover hr {
+  width: 120%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 section.news__group hr {
@@ -1249,6 +1377,14 @@ section.news__detail .news__detail--text .paragraph p {
 section.news__detail .news__detail--text a.link-black hr {
   margin-left: 0;
   width: 25%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+section.news__detail .news__detail--text a.link-black:hover hr {
+  width: 27%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .custom--prev-btn,
@@ -1375,8 +1511,9 @@ section.news__detail .news__detail--text a.link-black hr {
 .link hr,
 .link-black hr {
   border-bottom: 2px solid #ffffff;
-  -webkit-transition: link .2s ease-in-out;
-  transition: link .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  width: 100%;
 }
 
 .link:hover,
@@ -1386,8 +1523,9 @@ section.news__detail .news__detail--text a.link-black hr {
 
 .link:hover hr,
 .link-black:hover hr {
-  -webkit-transition: link .2s ease-in-out;
-  transition: link .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  width: 120%;
 }
 
 .link-black span {
@@ -1396,6 +1534,17 @@ section.news__detail .news__detail--text a.link-black hr {
 
 .link-black hr {
   border-bottom: 2px solid #10292D;
+  width: 100%;
+}
+
+.link-black:hover {
+  text-decoration: none;
+}
+
+.link-black:hover hr {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  width: 120%;
 }
 
 @media screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {

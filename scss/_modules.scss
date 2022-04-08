@@ -25,7 +25,7 @@ section {
                     overflow: hidden;
                     white-space: nowrap;
                     .title {
-                        animation: scrollText 10s infinite linear;
+                        animation: scrollText 20s infinite linear;
                         display: flex;
                         h1 {
                             font-size: 120px;
@@ -136,6 +136,27 @@ section {
             .owl-carousel {
                 .slide {
                     .slide-content {
+
+                        figure {
+                            overflow: hidden;
+
+                            img {
+                                transform: scale(1.0);
+                                transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                            }
+                        }
+
+                        &:hover {
+                        
+                            figure {
+                        
+                                img {
+                                    transform: scale(1.2);
+                                    transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                                }
+                            }
+                        }
+
                         h4 {
                             font-family: $font-family-montserrat;
                             font-weight: $font-weight-semibold;
@@ -200,9 +221,23 @@ section {
 
                 figure {
                     margin: 0;
+                    overflow: hidden;
 
                     img {
                         width: 100%;
+                        transform: scale(1.0);
+                        transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                    }
+                }
+
+                &:hover {
+
+                    figure {
+
+                        img {
+                            transform: scale(1.2);
+                            transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                        }
                     }
                 }
             }
@@ -240,6 +275,26 @@ section {
                         -webkit-transform: translateX(-10%);
                         transform: translateX(-10%);
                         opacity: 0;
+
+                        figure {
+                            overflow: hidden;
+
+                            img {
+                                transform: scale(1.0);
+                                transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                            }
+                        }
+
+                        &:hover {
+
+                            figure {
+                            
+                                img {
+                                    transform: scale(1.2);
+                                    transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                                }
+                            }
+                        }
                     }
                     
                     .content__carousel {
@@ -356,9 +411,23 @@ section {
                 
                 figure {
                     margin: 0;
+                    overflow: hidden;
 
                     img {
                         width: 100%;
+                        transform: scale(1.0);
+                        transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                    }
+                }
+
+                &:hover {
+
+                    figure {
+
+                        img {
+                            transform: scale(1.2);
+                            transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                        }
                     }
                 }
             }
@@ -391,9 +460,23 @@ section {
                 margin-bottom: 70px;
                 
                 figure {
+                    overflow: hidden;
 
                     img {
                         width: 100%;
+                        transform: scale(1.0);
+                        transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                    }
+                }
+
+                &:hover {
+
+                    figure {
+
+                        img {
+                            transform: scale(1.2);
+                            transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                        }
                     }
                 }
             }
@@ -477,9 +560,23 @@ section {
 
                     figure {
                         margin-bottom: 50px;
+                        overflow: hidden;
 
                         img {
                             width: 100%;
+                            transform: scale(1.0);
+                            transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                        }
+                    }
+
+                    &:hover {
+                        
+                        figure {
+
+                            img {
+                                transform: scale(1.2);
+                                transition: all .5s cubic-bezier(0.58, 0.02, 0.37, 0.99);
+                            }
                         }
                     }
 
@@ -577,6 +674,15 @@ section {
                             width: 13%;
                             margin-top: 10px;
                             border-bottom: 2px solid $black;
+                            transition: all .3s ease-in-out;
+                        }
+
+                        &:hover {
+
+                            hr {
+                                width: 15%;
+                                transition: all .3s ease-in-out;
+                            }
                         }
                     }
                 }
@@ -618,7 +724,17 @@ section {
                     }
 
                     hr {
+                        width: 100%;
                         border-bottom: 2px solid $primary-color;
+                        transition: all .3s ease-in-out;
+                    }
+
+                    &:hover {
+
+                        hr {
+                            width: 120%;
+                            transition: all .3s ease-in-out;
+                        }
                     }
                 }
             }
@@ -684,6 +800,15 @@ section {
                     hr {
                         margin-left: 0;
                         width: 25%;
+                        transition: all .3s ease-in-out;
+                    }
+
+                    &:hover {
+
+                        hr {
+                            width: 27%;
+                            transition: all .3s ease-in-out;
+                        }
                     }
                 }
             }
@@ -780,14 +905,16 @@ section {
 
     hr {
         border-bottom: 2px solid $white;
-        transition: link .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        width: 100%;
     }
 
     &:hover {
         text-decoration: none;
         
         hr {
-            transition: link .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            width: 120%;
         }
     }
 
@@ -801,6 +928,16 @@ section {
 
     hr {
         border-bottom: 2px solid $primary-color;
+        width: 100%;
+    }
+
+    &:hover {
+        text-decoration: none;
+    
+        hr {
+            transition: all .2s ease-in-out;
+            width: 120%;
+        }
     }
 }
 
